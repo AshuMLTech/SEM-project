@@ -1,0 +1,86 @@
+# SEM Plan Builder Configuration
+app:
+  name: "SEM Plan Builder"
+  version: "1.0.0"
+  environment: "development"
+
+database:
+  name: "sem"
+  migrations_path: "./migrations"
+
+campaigns:
+  default_budgets:
+    shopping: 1000
+    search: 2000
+    pmax: 1500
+  conversion_rate: 0.02
+  default_cpc: 3.0
+
+keywords:
+  min_search_volume: 500
+  sample_keywords:
+    - "digital marketing services"
+    - "seo optimization"
+    - "ppc advertising"
+    - "social media marketing"
+    - "content marketing"
+    - "email marketing"
+    - "web design"
+    - "brand strategy"
+    - "online advertising"
+    - "marketing automation"
+    - "conversion optimization"
+    - "google ads management"
+    - "facebook advertising"
+    - "instagram marketing"
+    - "linkedin marketing"
+    - "video marketing"
+    - "influencer marketing"
+    - "affiliate marketing"
+    - "marketing analytics"
+    - "customer acquisition"
+
+analysis:
+  competition_levels:
+    - "LOW"
+    - "MEDIUM"
+    - "HIGH"
+  intent_types:
+    - "BRAND"
+    - "CATEGORY"
+    - "COMPETITOR"
+    - "LOCATION"
+    - "LONG_TAIL"
+  theme_patterns:
+    - name: "Digital Marketing Services"
+      patterns: ["digital", "marketing", "online", "internet"]
+    - name: "SEO & Optimization"
+      patterns: ["seo", "optimization", "search engine", "ranking"]
+    - name: "Advertising & PPC"
+      patterns: ["advertising", "ppc", "ads", "campaign"]
+    - name: "Social Media Marketing"
+      patterns: ["social", "facebook", "instagram", "twitter", "linkedin"]
+    - name: "Content & Email Marketing"
+      patterns: ["content", "email", "newsletter", "blog"]
+    - name: "Web Design & Development"
+      patterns: ["web", "website", "design", "development"]
+
+shopping:
+  product_categories:
+    - "Electronics & Technology"
+    - "Health & Beauty"
+    - "Home & Garden"
+    - "Sports & Outdoors"
+    - "Clothing & Accessories"
+    - "Books & Media"
+    - "Automotive"
+    - "Food & Beverages"
+  priority_thresholds:
+    high_conversions: 10
+    medium_conversions: 5
+    high_cpc_threshold: 3
+    medium_cpc_threshold: 5
+
+logging:
+  level: "info"
+  format: "json"

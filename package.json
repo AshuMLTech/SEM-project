@@ -1,0 +1,10 @@
+{
+  "name": "Ashutosh-app ",
+  "version": "1.0.0",
+  "type": "module",
+  "packageManager": "bun",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
